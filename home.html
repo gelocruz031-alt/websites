@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home — My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>✨ Welcome to My Personal Website ✨</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html" style="color: #ff6600; font-weight: bold;">🏠 HOME</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">ABOUT ▾</a>
+                <div class="dropdown-content">
+                    <a href="skills.html">💡 Skills I'm Developing</a>
+                    <a href="goals.html">🎯 My Goals as a Student</a>
+                    <a href="funfacts.html">😄 Fun Facts About Me</a>
+                </div>
+            </li>
+            <li><a href="gallery.html">📸 GALLERY</a></li>
+            <li><a href="contact.html">✉️ CONTACT</a></li>
+            <li><button class="logout-button" onclick="confirmLogout()">🚪 LOGOUT</button></li>
+        </ul>
+    </nav>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="images/slide1.jpg" alt="Welcome">
+                <div class="text-overlay">
+                    <h1>Welcome to My Website ✨</h1>
+                    <p>Discover my journey, skills, and dreams</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/slide2.jpg" alt="Skills">
+                <div class="text-overlay">
+                    <h1>Learning Every Day 📚</h1>
+                    <p>Building skills for a better future</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/slide3.jpg" alt="Goals">
+                <div class="text-overlay">
+                    <h1>Dream Big 🚀</h1>
+                    <p>Every step counts toward success</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="drop">
+        <h2>👋 Hello There!</h2>
+        <p>I'm Angela Marie T Dela Cruz, a BSIS student passionate about technology and design. Welcome to my personal space on the web! 🖥️✨</p>
+        
+        <div class="see-more-container">
+            <a href="skills.html" class="see-more-button">See More About Me →</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="image-section">
+            <img src="images/profile.jpg" alt="My Profile Picture">
+        </div>
+        <div class="quote-section">
+            <h1>Hi, I'm Angela! 👋</h1>
+            <p>A BS Information Systems student with a passion for web development and design. I believe that technology can change the world, one line of code at a time. 💻🌍</p>
+            <blockquote>"Success is not final, failure is not fatal: it is the courage to continue that counts." — Winston Churchill</blockquote>
+        </div>
+    </div>
+
+    <footer>
+        <p>✨ Made with love — © 2026 Angela. All rights reserved. ✨</p>
+        <div class="footer-divider"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

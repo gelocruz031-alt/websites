@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — My Personal Website</title>
+    <link rel="stylesheet" href="login_style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>✨ Welcome ✨</h1>
+            <p class="subtitle">Please login to visit my website</p>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">👤 Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">🔒 Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                
+                <div class="show-password">
+                    <input type="checkbox" id="showPass" onclick="togglePassword()">
+                    <label for="showPass">Show Password</label>
+                </div>
+                
+                <button type="button" class="login-btn" onclick="checkLogin()">🚪 LOGIN</button>
+            </form>
+            
+            <p class="hint">💡 Tip: Username: <strong>admin</strong> | Password: <strong>041726</strong></p>
+        </div>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const pass = document.getElementById('password');
+            pass.type = pass.type === 'password' ? 'text' : 'password';
+        }
+
+        function checkLogin() {
+            const user = document.getElementById('username').value;
+            const pass = document.getElementById('password').value;
+            
+            if (user === "admin" && pass === "041726") {
+                window.location.href = "home.html";
+            } else {
+                alert("❌ Incorrect username or password. Please try again!");
+            }
+        }
+    </script>
+</body>
+</html>
